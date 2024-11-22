@@ -24,19 +24,22 @@
 }
 .todoListItemContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: #c0fcc5;
+  flex-direction: column; 
+  gap: 10px;  
+  padding: 10px;
+}
+.todoItem{
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  background-color: #d3ffd3; 
   padding: 10px;
   border-radius: 5px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: auto;
 }
 .todoListItemText {
   flex: 1;
-  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 .todoListDeleteIcon {
   cursor: pointer;
@@ -95,7 +98,7 @@
 }
 .todoCompletedDeleteButton {
   margin-left: 10px;
-  color: #e53935; 
+
   cursor: pointer;
   border-radius: 50% !important;
   display: block;
@@ -117,7 +120,7 @@
 }
 
 .completedTodoListDeleteIcon{
-  color: red !important;
+  
   cursor: pointer;
 }
 .completedTodoListDeleteIcon:hover {

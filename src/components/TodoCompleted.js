@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, Typography } from "@mui/material";
+import { Container, IconButton, Typography } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 
@@ -9,7 +9,7 @@ const TodoCompleted = ({
   moveToTodoList,
 }) => {
   return (
-    <div className="todoCompletedContainer">
+    <Container className="todoCompletedContainer">
       {completedTodoList.length > 0 ? (
         completedTodoList.map((item, index) => (
           <div key={item.id} className="todoCompletedItem">
@@ -33,7 +33,7 @@ const TodoCompleted = ({
       ) : (
         <Typography>No Completed Tasks</Typography>
       )}
-    </div>
+    </Container>
   );
 };
 

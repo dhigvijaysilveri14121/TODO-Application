@@ -1,17 +1,14 @@
-import { Container, Grid, IconButton } from "@mui/material";
+import { Container, Grid, IconButton, Typography } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 import "./App.css";
 
 const TodoList = (props) => {
-
   return (
-    <Container>
-      <Grid container spacing={2} className="todoListItemContainer" alignItems='center'>
-        <Grid item xs={9} sm={8} className='todoListItemText' >
-          {props.item.task}
-        </Grid>
+    <Container className="todoListItemContainer">
+      <Grid className="todoItem">
+        <Typography className="todoListItemText">{props.item.task}</Typography>
         <IconButton
           color="primary"
           onClick={() => props.editHandler(props.index)}
@@ -24,12 +21,12 @@ const TodoList = (props) => {
         >
           <CheckCircleOutlineOutlinedIcon />
         </IconButton>
-        <Grid
+        <IconButton
           className="todoListDeleteIcon"
           onClick={() => props.deleteHandler(props.index)}
         >
           <DeleteIcon />
-        </Grid>
+        </IconButton>
       </Grid>
     </Container>
   );
