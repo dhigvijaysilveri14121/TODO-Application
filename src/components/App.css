@@ -1,0 +1,128 @@
+.mainPage{
+  padding: 20px;
+  min-height: 100vh;
+}
+.todoInputContainer{
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.todoInputGrid{
+  display: flex;
+  align-items: center;
+}
+.todoInputField{
+  flex: 1;
+}
+.todoInputButton {
+  margin-left: 10px;
+  background-color: #a2caa3;
+  color: white;
+}
+.todoInputButton:hover {
+  background-color: #45a049;
+  color: #f4f4f9;
+}
+.todoListItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #c0fcc5;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+.todoListItemText {
+  flex: 1;
+  cursor: pointer;
+}
+.todoListDeleteIcon {
+  cursor: pointer;
+  color: red;
+}
+.todoListDeleteIcon:hover {
+  color: #e53935;
+}
+.todoListContainer {
+  display: flex;
+  flex-direction: column;
+}
+.heading{
+  color: #e53935;
+  text-align: center;
+  background-color: black;
+  color: #f4f4f9;
+  margin-bottom: 20px !important;
+
+}
+
+.todoCompletedContainer {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;  
+  padding: 10px;
+}
+
+
+.todoCompletedItem {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  background-color: #d3ffd3; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.todoCompletedItemText {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+}
+.todoCompletedButton {
+  margin-left: 10px;
+  background-color: #fbc02d; 
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  
+}
+.todoCompletedButton:hover {
+  background-color: #fdd835;
+}
+.todoCompletedDeleteButton {
+  margin-left: 10px;
+  color: #e53935; 
+  cursor: pointer;
+  border-radius: 50% !important;
+  display: block;
+  width: 5px;
+}
+.todoCompletedDeleteButton:hover {
+  color: #b71c1c;
+}
+.dropBox{
+  display: flex;
+  flex: 1;
+  width: 200px;
+}
+.search-icon{
+  position: absolute;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+.completedTodoListDeleteIcon{
+  color: red !important;
+  cursor: pointer;
+}
+.completedTodoListDeleteIcon:hover {
+  color: #e53935 !important;
+}
+.todoNotCompletedButton:hover{
+  color: #fdd835;
+}
