@@ -50,7 +50,7 @@ const App = () => {
     <Container className="mainPage">
       <Grid item xs={12} lg={12}>
         <Typography variant="h3" className="heading">
-          My Tasks
+          My Tasks For Today
         </Typography>
       </Grid>
 
